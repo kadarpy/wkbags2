@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK BAGS - Where Craft Meets Elegance | Luxury Handcrafted Beaded Bags</title>
+    <meta name="description" content="Discover WK BAGS - Exquisite handcrafted beaded bags combining traditional craftsmanship with modern luxury. Shop bridal, party, casual & premium collections.">
+    <meta name="keywords" content="luxury bags, handcrafted bags, beaded bags, bridal clutch, evening bags, custom bags">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/dd587796-d7f6-4001-b7b9-cffdd253b101.png" alt="WK BAGS Logo" />
+            </div>
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Crafting Excellence...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/dd587796-d7f6-4001-b7b9-cffdd253b101.png" alt="WK BAGS" class="nav__logo">
+                <span class="nav__brand-text">WK BAGS</span>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#shop" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#custom" class="nav__link">Custom Orders</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <button class="nav__search" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="M21 21l-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="nav__wishlist" id="wishlistBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span class="nav__count" id="wishlistCount">0</span>
+                </button>
+                <button class="nav__cart" id="cartBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                        <path d="M20 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="nav__count" id="cartCount">0</span>
+                </button>
+                <button class="nav__toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__content">
+                <div class="hero__sparkles"></div>
+                <h1 class="hero__title">
+                    <span class="hero__title-line">WK BAGS</span>
+                    <span class="hero__title-line">The Art of</span>
+                    <span class="hero__title-line">Beaded Luxury</span>
+                </h1>
+                <p class="hero__tagline" id="heroTagline">Where Craft Meets Elegance</p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary hero__cta">Explore Collection</button>
+                    <button class="btn btn--outline hero__cta-secondary">Watch Our Story</button>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span>Scroll to Discover</span>
+                <div class="hero__scroll-indicator"></div>
+            </div>
+        </section>
+
+        <!-- Brand Story Section -->
+        <section class="story" id="story">
+            <div class="container">
+                <div class="story__grid">
+                    <div class="story__content">
+                        <h2 class="story__title">The Art of Beaded Luxury</h2>
+                        <p class="story__text">Every WK BAGS creation is a masterpiece born from generations of traditional beadwork artistry. Our skilled artisans meticulously hand-select each bead, pearl, and crystal, weaving them together to create bags that are not just accessories, but heirloom pieces that tell stories.</p>
+                        <p class="story__text">From the initial sketch to the final stitch, every step of our process is infused with passion, precision, and an unwavering commitment to excellence. We believe that true luxury lies not just in premium materials, but in the human touch that brings each piece to life.</p>
+                        <div class="story__features">
+                            <div class="story__feature">
+                                <span class="story__feature-icon">✨</span>
+                                <span>Handcrafted Excellence</span>
+                            </div>
+                            <div class="story__feature">
+                                <span class="story__feature-icon">💎</span>
+                                <span>Premium Materials</span>
+                            </div>
+                            <div class="story__feature">
+                                <span class="story__feature-icon">🌟</span>
+                                <span>Timeless Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story__image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1757151197/pplx_project_search_images/4b7889166b941325255d2dd13d20141869627b32.png" alt="Artisan crafting beaded bag" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured" id="featured">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Collections</h2>
+                    <p class="section-subtitle">Discover our most coveted designs</p>
+                </div>
+                <div class="featured__grid" id="featuredGrid">
+                    <!-- Products will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Craftsmanship Process -->
+        <section class="craftsmanship" id="craftsmanship">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Craftsmanship Process</h2>
+                    <p class="section-subtitle">Every bag tells a story of meticulous artistry</p>
+                </div>
+                <div class="craftsmanship__steps">
+                    <div class="craftsmanship__step">
+                        <div class="craftsmanship__step-number">01</div>
+                        <div class="craftsmanship__step-content">
+                            <h3 class="craftsmanship__step-title">Design & Selection</h3>
+                            <p class="craftsmanship__step-text">Our designers create unique patterns and carefully select premium beads, pearls, and crystals from around the world.</p>
+                        </div>
+                    </div>
+                    <div class="craftsmanship__step">
+                        <div class="craftsmanship__step-number">02</div>
+                        <div class="craftsmanship__step-content">
+                            <h3 class="craftsmanship__step-title">Hand Beading</h3>
+                            <p class="craftsmanship__step-text">Master artisans meticulously hand-stitch each bead using traditional techniques passed down through generations.</p>
+                        </div>
+                    </div>
+                    <div class="craftsmanship__step">
+                        <div class="craftsmanship__step-number">03</div>
+                        <div class="craftsmanship__step-content">
+                            <h3 class="craftsmanship__step-title">Quality Assurance</h3>
+                            <p class="craftsmanship__step-text">Every piece undergoes rigorous quality checks to ensure perfection in every detail, stitch, and finish.</p>
+                        </div>
+                    </div>
+                    <div class="craftsmanship__step">
+                        <div class="craftsmanship__step-number">04</div>
+                        <div class="craftsmanship__step-content">
+                            <h3 class="craftsmanship__step-title">Final Touches</h3>
+                            <p class="craftsmanship__step-text">Each bag receives its final luxury touches - premium lining, hardware, and elegant packaging worthy of the masterpiece within.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Stories from our satisfied customers</p>
+                </div>
+                <div class="testimonials__slider" id="testimonialsSlider">
+                    <!-- Testimonials will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section class="shop hidden" id="shop">
+            <div class="container">
+                <div class="shop__header">
+                    <div class="section-header">
+                        <h2 class="section-title">Shop Collection</h2>
+                        <p class="section-subtitle">Discover your perfect luxury companion</p>
+                    </div>
+                    <div class="shop__filters">
+                        <div class="shop__filter-group">
+                            <label class="form-label">Category</label>
+                            <select class="form-control shop__filter" id="categoryFilter">
+                                <option value="">All Categories</option>
+                                <option value="bridal">Bridal Collection</option>
+                                <option value="party">Party & Evening</option>
+                                <option value="casual">Casual Luxury</option>
+                                <option value="luxury">Premium Edition</option>
+                            </select>
+                        </div>
+                        <div class="shop__filter-group">
+                            <label class="form-label">Price Range</label>
+                            <select class="form-control shop__filter" id="priceFilter">
+                                <option value="">All Prices</option>
+                                <option value="0-200">Under ₹200</option>
+                                <option value="200-400">₹200 - ₹400</option>
+                                <option value="400-600">₹400 - ₹600</option>
+                                <option value="600+">Above ₹600</option>
+                            </select>
+                        </div>
+                        <div class="shop__filter-group">
+                            <label class="form-label">Sort By</label>
+                            <select class="form-control shop__filter" id="sortFilter">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                                <option value="newest">Newest</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop__grid" id="shopGrid">
+                    <!-- Products will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Detail Modal -->
+        <div class="modal hidden" id="productModal">
+            <div class="modal__overlay" id="modalOverlay"></div>
+            <div class="modal__content">
+                <button class="modal__close" id="modalClose">×</button>
+                <div class="product-detail" id="productDetail">
+                    <!-- Product detail content will be dynamically loaded -->
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="about hidden" id="about">
+            <div class="container">
+                <div class="about__hero">
+                    <h2 class="section-title">About WK BAGS</h2>
+                    <p class="section-subtitle">Where tradition meets innovation in the art of luxury craftsmanship</p>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__story">
+                        <h3>Our Story</h3>
+                        <p>Founded with a passion for preserving traditional beadwork artistry, WK BAGS represents the perfect fusion of heritage craftsmanship and contemporary luxury design. Our journey began with a simple vision: to create accessories that are not just beautiful, but meaningful.</p>
+                        <p>Every artisan in our atelier brings decades of experience, their hands telling stories through intricate beadwork that has been passed down through generations. We source our materials from the finest suppliers worldwide, ensuring that each bead, pearl, and crystal meets our exacting standards.</p>
+                    </div>
+                    
+                    <div class="about__values">
+                        <h3>Our Values</h3>
+                        <div class="about__values-grid">
+                            <div class="about__value">
+                                <h4>Craftsmanship</h4>
+                                <p>We believe in the power of human hands to create beauty that machines cannot replicate.</p>
+                            </div>
+                            <div class="about__value">
+                                <h4>Sustainability</h4>
+                                <p>We are committed to ethical sourcing and sustainable practices in every aspect of our business.</p>
+                            </div>
+                            <div class="about__value">
+                                <h4>Excellence</h4>
+                                <p>Every piece that leaves our atelier represents our unwavering commitment to perfection.</p>
+                            </div>
+                            <div class="about__value">
+                                <h4>Innovation</h4>
+                                <p>While honoring tradition, we continuously explore new techniques and designs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Orders Section -->
+        <section class="custom hidden" id="custom">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Custom Orders</h2>
+                    <p class="section-subtitle">Create your perfect, personalized masterpiece</p>
+                </div>
+                
+                <div class="custom__content">
+                    <div class="custom__form-container">
+                        <form class="custom__form" id="customForm">
+                            <div class="custom__step active" data-step="1">
+                                <h3>Step 1: Choose Your Style</h3>
+                                <div class="custom__options">
+                                    <label class="custom__option">
+                                        <input type="radio" name="bagType" value="clutch">
+                                        <span>Evening Clutch</span>
+                                    </label>
+                                    <label class="custom__option">
+                                        <input type="radio" name="bagType" value="tote">
+                                        <span>Luxury Tote</span>
+                                    </label>
+                                    <label class="custom__option">
+                                        <input type="radio" name="bagType" value="crossbody">
+                                        <span>Crossbody Bag</span>
+                                    </label>
+                                    <label class="custom__option">
+                                        <input type="radio" name="bagType" value="handbag">
+                                        <span>Classic Handbag</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="custom__step" data-step="2">
+                                <h3>Step 2: Select Colors & Materials</h3>
+                                <div class="custom__color-grid">
+                                    <label class="custom__color-option">
+                                        <input type="checkbox" name="colors" value="pearl-white">
+                                        <span class="custom__color-swatch" style="background: #f8f6f0;"></span>
+                                        <span>Pearl White</span>
+                                    </label>
+                                    <label class="custom__color-option">
+                                        <input type="checkbox" name="colors" value="champagne-gold">
+                                        <span class="custom__color-swatch" style="background: #d4af37;"></span>
+                                        <span>Champagne Gold</span>
+                                    </label>
+                                    <label class="custom__color-option">
+                                        <input type="checkbox" name="colors" value="midnight-black">
+                                        <span class="custom__color-swatch" style="background: #1a1a1a;"></span>
+                                        <span>Midnight Black</span>
+                                    </label>
+                                    <label class="custom__color-option">
+                                        <input type="checkbox" name="colors" value="ocean-blue">
+                                        <span class="custom__color-swatch" style="background: #4a90e2;"></span>
+                                        <span>Ocean Blue</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="custom__step" data-step="3">
+                                <h3>Step 3: Personalization</h3>
+                                <div class="form-group">
+                                    <label class="form-label">Personalization Type</label>
+                                    <select class="form-control" name="personalizationType">
+                                        <option value="">None</option>
+                                        <option value="initials">Initials</option>
+                                        <option value="name">Full Name</option>
+                                        <option value="date">Special Date</option>
+                                        <option value="message">Custom Message</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Personalization Text</label>
+                                    <input type="text" class="form-control" name="personalizationText" placeholder="Enter your text">
+                                </div>
+                            </div>
+                            
+                            <div class="custom__step" data-step="4">
+                                <h3>Step 4: Your Details</h3>
+                                <div class="form-group">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" name="customerName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control" name="customerEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Phone *</label>
+                                    <input type="tel" class="form-control" name="customerPhone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Special Requirements</label>
+                                    <textarea class="form-control" name="specialRequirements" rows="4" placeholder="Any special requirements or inspiration details..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="custom__navigation">
+                                <button type="button" class="btn btn--outline" id="customPrev" style="display: none;">Previous</button>
+                                <button type="button" class="btn btn--primary" id="customNext">Next</button>
+                                <button type="submit" class="btn btn--primary" id="customSubmit" style="display: none;">Submit Order</button>
+                            </div>
+                            
+                            <div class="custom__price">
+                                <div class="custom__price-label">Estimated Price:</div>
+                                <div class="custom__price-value" id="customPrice">₹500</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog hidden" id="blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Blog</h2>
+                    <p class="section-subtitle">Stories, insights, and inspiration from the world of luxury accessories</p>
+                </div>
+                
+                <div class="blog__grid" id="blogGrid">
+                    <!-- Blog posts will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact hidden" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you and help create your perfect bag</p>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">📧</div>
+                            <div class="contact__item-content">
+                                <h4>Email</h4>
+                                <p>hello@wkbags.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">📱</div>
+                            <div class="contact__item-content">
+                                <h4>Phone & WhatsApp</h4>
+                                <p>+91 9876543210</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item-icon">📍</div>
+                            <div class="contact__item-content">
+                                <h4>Location</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <h4>Follow Us</h4>
+                            <div class="contact__social-links">
+                                <a href="#" target="_blank">Instagram</a>
+                                <a href="#" target="_blank">Facebook</a>
+                                <a href="#" target="_blank">Pinterest</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form-container">
+                        <form class="contact__form" id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label">Name *</label>
+                                <input type="text" class="form-control" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-control" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message *</label>
+                                <textarea class="form-control" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/dd587796-d7f6-4001-b7b9-cffdd253b101.png" alt="WK BAGS" class="footer__logo">
+                    <p class="footer__tagline">Where Craft Meets Elegance</p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#shop">All Collections</a></li>
+                            <li><a href="#shop">Bridal Collection</a></li>
+                            <li><a href="#shop">Evening Bags</a></li>
+                            <li><a href="#custom">Custom Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#blog">Our Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Shipping & Returns</a></li>
+                            <li><a href="#">Care Instructions</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 WK BAGS. All rights reserved.</p>
+                <div class="footer__payment">
+                    <span>Secure Payment Methods</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar hidden" id="cartSidebar">
+        <div class="cart-sidebar__overlay" id="cartOverlay"></div>
+        <div class="cart-sidebar__content">
+            <div class="cart-sidebar__header">
+                <h3>Shopping Cart</h3>
+                <button class="cart-sidebar__close" id="cartClose">×</button>
+            </div>
+            <div class="cart-sidebar__items" id="cartItems">
+                <!-- Cart items will be dynamically loaded -->
+            </div>
+            <div class="cart-sidebar__footer">
+                <div class="cart-sidebar__total">
+                    <span>Total: ₹<span id="cartTotal">0</span></span>
+                </div>
+                <button class="btn btn--primary btn--full-width" id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
